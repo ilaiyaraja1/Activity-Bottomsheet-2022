@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="55dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:outlineAmbientShadowColor="@color/black"
+        android:importantForAutofill="auto"
+        android:background="#00B0FF"
+        />
+
+    <TextView
+        android:layout_width="215dp"
+        android:layout_gravity="left"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="21dp"
+        android:text="Enter your name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="42dp">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="284dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:maxLength="15"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:paddingStart="12dp"
+            />
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/count"
+            android:enabled="false"
+            android:text="00"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:background="@color/teal_700"
+        android:enabled="false"
+        android:text="SAVE"
+        android:textColor="@color/purple_700" />
+
+</LinearLayout>
